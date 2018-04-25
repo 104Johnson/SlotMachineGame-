@@ -15,6 +15,7 @@
 |Z | C | Z |
 
 2.每個符號代表的權重，權重越大出現機率越高
+
 | Symbol Name | Symbol Weight |
 |-------------|--------------|
 | A | 1 |
@@ -25,6 +26,7 @@
 | Z | 4 |
 
 3.滾輪的倍率獎金Mapping圖
+
 | Winning Combination | Bet Multiplier |
 |-------------|----------------|
 | A,A,A | 20  |

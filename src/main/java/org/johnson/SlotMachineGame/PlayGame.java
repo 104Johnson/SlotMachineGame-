@@ -31,14 +31,14 @@ public class PlayGame implements Spinner, Evaluator {
 
 			SlotMachine slotMachine = new SlotMachine(reels, spinner, evaluator);
 
-			System.out.println("请输入籌碼：(離開請輸入-1)");
+			System.out.println("Please enter the bet：(Leave please enter -1)");
 			 Scanner scanner = new Scanner(System.in);
 			 Long bet;
 			 
 			do {
 				bet = scanner.nextLong();
 				if (bet<-1) {
-					throw new Exception("籌碼不正常，已強制結束");
+					throw new Exception("<Wronging>input error，will cancel game!!");
 				}
 				SpinResult spinResult = slotMachine.spin(bet);
 
@@ -46,14 +46,14 @@ public class PlayGame implements Spinner, Evaluator {
 				for (Symbol symbol : spinResult.getSymbols()) {
 					spinResultString += symbol.getName();
 				}
-				System.out.println("本次結果為: " + spinResultString + "下注:" + bet + "共獲得:" + spinResult.getPayout());
+				System.out.println("This result: " + spinResultString + " bet:" + bet + " total of:" + spinResult.getPayout());
 			
 			}while(bet!=-1);
 			
 			scanner.close();
 
 		} catch (InputMismatchException e) {
-			System.out.println("輸入字元不正常，已強制結束");
+			System.out.println("<Wronging>input error，will cancel game!!");
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

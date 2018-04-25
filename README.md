@@ -33,3 +33,10 @@
 | B,B,B | 20  |
 | C,C,C | 20  |
 | A,B,C | 30  |
+
+##安裝執行
+1.將專案Git pull
+2.請進入console介面<CMD>
+3.在SlotMachineGame專案目錄下 執行「mvn clean install」打包成Jar檔
+4.前往目錄 SlotMachineGame\target，執行「java -jar SlotMachineGame-0.0.1-SNAPSHOT-jar-with-dependencies.jar」
+5.輸入要押的籌碼，若輸入為-1或是非數字型態，會關閉遊戲。

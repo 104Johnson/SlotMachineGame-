@@ -34,9 +34,12 @@
 | C,C,C | 20  |
 | A,B,C | 30  |
 
+##前置作業確認
+電腦已經下載「java-exam-master」專案，並且執行過「mvn clean install」
 ##安裝執行
 1.將專案Git pull
 2.請進入console介面<CMD>
 3.在SlotMachineGame專案目錄下 執行「mvn clean install」打包成Jar檔
-4.前往目錄 SlotMachineGame\target，執行「java -jar SlotMachineGame-0.0.1-SNAPSHOT-jar-with-dependencies.jar」
+_若測試案例不過，會打包失敗_，若須調整測試案例可至 \SlotMachineGame\src\test\java\org\johnson\SlotMachineGame\PlayGameTest.java
+4.前往目錄 \SlotMachineGame\target，執行「java -jar SlotMachineGame-0.0.1-SNAPSHOT-jar-with-dependencies.jar」
 5.輸入要押的籌碼，若輸入為-1或是非數字型態，會關閉遊戲。
